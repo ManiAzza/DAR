@@ -10,6 +10,10 @@ public class Main {
     	Rectangle B = new Rectangle() ; 
     	B.perimeter(4, 5);
     	B.surface(5, 6);
+        
+        Square C = new Square(); 
+    	C.perimeter(2);
+    	C.surface(2);
         // if I want to create a new shape (for example square)
         // how can I force the implementation of perimeter and surface on that shape ?
     }
