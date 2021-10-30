@@ -10,15 +10,20 @@ public class CorrectNumberFormat {
         Scanner scanner = new Scanner(System.in);
 
         //get input from console
+
         String line = scanner.nextLine();
 
         //convert it to number
-        int num = Integer.parseInt(line);
 
         // todo print the answer based on the input
 
-        System.out.println("It's a number :)");
+        try {
+            int num = Integer.parseInt(line);
 
-        System.out.println("It's not a number :(");
+            System.out.println("It's a number :)");
+        } catch (NumberFormatException e) {
+
+            System.out.println("It's not a number :(");
+        }
     }
 }

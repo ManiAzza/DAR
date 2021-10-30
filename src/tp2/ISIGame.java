@@ -15,6 +15,19 @@ public class ISIGame {
 
         Scanner scanner = new Scanner(System.in);
         String line = scanner.nextLine();
+        if (!line.contains("ISI")){
+            System.out.println("OK!");
+        }else {
+           try{
+               throw new ISIException("life is not ISI");
+
+           }catch (ISIException e) {
+               System.out.println(e.getMessage());
+
+           }
+
+
+        }
 
         // now you have to check if the word contains 'isi' or not
         // if not print 'ok'
