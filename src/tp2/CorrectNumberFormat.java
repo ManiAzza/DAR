@@ -19,6 +19,6 @@ public class CorrectNumberFormat {
 
         System.out.println("It's a number :)");
 
-        System.out.println("It's not a number :(");
+        System.out.println("It's not a number    :(");
     }
 }
